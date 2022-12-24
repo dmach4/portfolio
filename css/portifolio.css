@@ -1,0 +1,154 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+:root{
+--verde: green;
+--azul: rgb(13, 13, 135);
+--branco: white;
+--cinza: #1a1a1a;
+--preto:black;
+}
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--preto);
+  padding-bottom: 6rem;
+}
+section {
+  padding: 5rem;
+}
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--verde);
+  margin-bottom: 3rem;
+}
+.heading span {
+  color: var(--cinza);
+}
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 100;
+  align-items: flex-end;
+}
+.navbar a {
+  padding: 2rem;
+  font-size: 2rem;
+  background: var(--cinza);
+  flex: 1;
+  color: var(--branco);
+  text-align: center;
+  transition: .2s linear;
+}
+.navbar a i {
+  color: var(--verde);
+  padding-right: .5rem;
+}
+.navbar a:hover {
+  background: var(--cinza);
+  padding-bottom: 6rem;
+  border-radius: 40px 40px 0px 0px;
+  color: var(--verde);
+}
+.navbar a:hover i {
+  color: var(--branco);
+}
+/* ********************************* Portifólio ******************************* */
+.portfolio {
+  text-align: center;
+}
+.portfolio .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.portfolio .box-container .box {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio .box-container .box:hover .content {
+  transform: translateY(0%);
+}
+.portfolio .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.portfolio .box-container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--cinza);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transform: translateY(-100%);
+  transition: .4s linear;
+}
+.portfolio .box-container .box .content h3 {
+  font-size: 20px;
+  color: var(--preto);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.portfolio .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 13px;
+  line-height: 2;
+  color: var(--branco);
+}
+.portfolio .box-container .box .content a {
+  font-size: 14px;
+  color: var(--verde);
+}
+.portfolio .box-container .box .content a:hover {
+  color: var(--branco);
+}
+/* ************************************ Telas ********************************* */
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .navbar a i {
+    padding: 0;
+  }
+  .navbar a span {
+    display: none; 
+  }
+  .navbar a:hover {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
