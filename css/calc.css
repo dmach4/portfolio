@@ -150,13 +150,7 @@ input.operadores-basicos {
   html{
     font-size: 50%;
   }
-  .container {
-    max-width: 350px;
-    margin: 0 auto;
-  }
   .resultado input[type="text"] {
-    min-height: 120px;
-    width: 345px;
-    margin-bottom: 30px;
+    min-height: 100px;
   }
 }
