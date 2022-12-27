@@ -175,7 +175,7 @@ section {
 }
 .skills .box-container .box h3 {
   color: var(--branco);
-  font-size: 16px;
+  font-size: 12px;
   font-weight: normal;
   text-transform: uppercase;
 }
