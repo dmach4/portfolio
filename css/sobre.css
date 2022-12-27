@@ -151,33 +151,31 @@ section {
   font-size: 16px;
   color: var(--branco);
 }
-.skills .box-container {
+.conhecimento .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
 }
-.skills .box-container .box {
+.conhecimento .box-container .box {
   padding: 2rem;
   text-align: center;
   box-shadow: 2px 2px var(--verde);
   border-radius: .5rem;
   background: var(--cinza);
 }
-.skills .box-container .box:hover {
+.conhecimento .box-container .box:hover {
   background: var(--branco);
 }
-.skills .box-container .box:hover h3 {
+.conhecimento .box-container .box:hover h3 {
   color: var(--preto);
 }
-.skills .box-container .box img {
+.conhecimento .box-container .box img {
   height: 70px;
   margin-bottom: 5px;
 }
-.skills .box-container .box h3 {
+.conhecimento .box-container .box h3 {
   color: var(--branco);
-  font-size: 12px;
-  font-weight: normal;
-  text-transform: uppercase;
+  font-size: 16px;
 }
 /* *********************************** ESTUDO ********************************* */
 .estudo .box-container {
