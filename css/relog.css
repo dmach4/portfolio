@@ -57,8 +57,13 @@ body {
   color: var(--branco);
 }
 /* **************************** RELOGIO ************************** */
-
-
+#relogio{	
+  text-align: center;	
+  color: var(--verde);
+  padding-top: 300px;
+  font-size: 100px;
+  letter-spacing: 10px;
+}
 /* ************************************ Telas ********************************* */
 @media (max-width: 1200px) {
   html {
@@ -73,7 +78,7 @@ body {
     padding: 0;
   }
   .navbar a span {
-    display: none; 
+    display: none;
   }
   .navbar a:hover {
     padding-bottom: 2rem;
@@ -82,5 +87,8 @@ body {
 @media (max-width: 450px) {
   html{
     font-size: 50%;
+  }
+  #relogio{
+    font-size:50px; padding-top: 100px;
   }
 }
