@@ -63,6 +63,7 @@ body {
   color: var(--branco);
 }
 /* *************************** Jogo da Memória ******************************** */
+
 .card{
   width: 150px;
   height: 150px;
@@ -81,6 +82,7 @@ body {
   box-shadow: 5px 5px 5px var(--verde);
   backface-visibility: hidden;
 }
+
 .flip{
   transform: rotateY(180deg);
 }
@@ -122,6 +124,7 @@ body {
   grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
+
 /* ************************************ Telas ********************************* */
 @media (max-width: 1200px) {
   html {

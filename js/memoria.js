@@ -76,19 +76,20 @@ function createCardsFromTechs(techs){
     return cards.flatMap(pair => pair);
 }
 
-function createPairFromTech(tech){
+function createPairFromTech(tech) {
+
     return[{
-        id: createIdWithTech(tech),
-        icon: tech,
-        flipped: false,
-    },{
-        id: createIdWithTech(tech),
-        icon: tech,
-        flipped: false,
+      id: createIdWithTech(tech),
+      icon: tech,
+      flipped: false,
+    }, {
+      id: createIdWithTech(tech),
+      icon: tech,
+      flipped: false,
     }]
 }
 
-function createIdWithTech(tech){
+function createIdWithTech(tech) {
     return tech + parseInt(Math.random() * 1000);
 }
 
