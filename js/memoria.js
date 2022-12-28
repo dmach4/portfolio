@@ -43,11 +43,11 @@ function createCardFace(face, card, element){
 
     let cardElementFace = document.createElement('div');
     cardElementFace.classList.add(face);
-    if (face == FRONT) {
+    if (face === FRONT) {
         let iconElement = document.createElement('img');
         iconElement.classList.add(ICON);
         // ******************* CONFUGURAR PASTA *************
-        iconElement.src = "img/" + cards.icon + ".png";
+        iconElement.src = "../img/" + cards.icon + ".png";
         cardElementFace.appendChild(iconElement);
     }else{
         cardElementFace.innerHTML="&lt/&gt";
