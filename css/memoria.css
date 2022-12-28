@@ -93,7 +93,7 @@ body {
   color: var(--branco);
   background-color: var(--cinza);
   font-size: 30px;
-  /* display: none; */
+  display: flex;
 }
 #gameOver{
   position: absolute;
