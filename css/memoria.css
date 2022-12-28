@@ -24,11 +24,12 @@ html {
 body {
   background-color: var(--preto);
   padding-bottom: 6rem;
-
+/* ********************************************************** */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* ******************************************************** */
 }
 .navbar {
   position: fixed;
