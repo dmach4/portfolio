@@ -21,7 +21,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  background-color: var(--preto);
+  background-color:rgb(55, 55, 168);
   padding-bottom: 6rem;
 }
 section {
@@ -30,7 +30,7 @@ section {
 .heading {
   text-align: center;
   font-size: 3rem;
-  color: var(--verde);
+  color: var(--preto);
   margin-bottom: 3rem;
 }
 .heading span {
@@ -91,9 +91,15 @@ section {
   color: var(--branco);
 }
 /* ********************************** Contato ********************************* */
-.contato .row {
+
+.logo{
   display: flex;
   align-items: center;
+}
+
+.contato .row {
+  display: flex;
+  align-items:center;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -117,6 +123,7 @@ section {
   display: flex;
   gap: 2rem;
   padding: 1rem 0;
+
 }
 .contato .row .info-container .box-container .box i {
   font-size: 30px;
@@ -133,7 +140,7 @@ section {
   line-height: 4.5rem;
   border-radius: 50%;
   background: var(--cinza);
-  color: var(--verde);
+  color: var(--branco);
   text-align: center;
   margin-right: .3rem;
 }
@@ -150,7 +157,7 @@ section {
   justify-content: space-between;
 }
 .contato .row form .inputBox input {
-  width: 49%;
+  width: 60%;
 }
 .contato .row form .inputBox input, .contact .row form textarea {
   border-radius: 10px;
