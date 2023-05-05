@@ -1,0 +1,152 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+:root{
+--verde: green;
+--azul: rgb(13, 13, 135);
+--branco: white;
+--cinza: #1a1a1a;
+--preto:black;
+}
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+  padding-top: 15px;
+}
+body {
+  background-color: var(--branco);
+  padding-bottom: 6rem;
+/* ********************************************************** */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* ******************************************************** */
+}
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 100;
+  align-items: flex-end;
+}
+.navbar a {
+  padding: 2rem;
+  font-size: 2rem;
+  background: var(--cinza);
+  flex: 1;
+  color: var(--branco);
+  text-align: center;
+  transition: .2s linear;
+}
+.navbar a i {
+  color: var(--verde);
+  padding-right: .5rem;
+}
+.navbar a:hover {
+  background: var(--cinza);
+  padding-bottom: 6rem;
+  border-radius: 40px 40px 0px 0px;
+  color: var(--verde);
+}
+.navbar a:hover i {
+  color: var(--branco);
+}
+/* *************************** Juliana ******************************** */
+
+.card{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.card_front, .card_back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px var(--verde);
+  backface-visibility: hidden;
+}
+
+.flip{
+  transform: rotateY(180deg);
+}
+.card_front{
+  transform: rotateY(180deg);
+  background-color: var(--cinza);
+}
+.card_back{
+  font-weight: bold;
+  color: var(--branco);
+  background-color: var(--cinza);
+  font-size: 30px;
+  display: flex;
+}
+#gameOver{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--azul);
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+}
+#restart{
+  padding: 10px 60px;
+  font-size: 20px;
+  background-color: var(--verde);
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+#gameBoard{
+  max-width: 700px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+/* ************************************ Telas ********************************* */
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .navbar a i {
+    padding: 0;
+  }
+  .navbar a span {
+    display: none;
+  }
+  .navbar a:hover {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  html{
+    font-size: 50%;
+  }
+}
