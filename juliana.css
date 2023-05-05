@@ -17,19 +17,47 @@
 --preto:black;
 }
 html {
-  font-size: 60%;
+  font-size: 62%;
   overflow-x: hidden;
-  padding-top: 15px;
 }
 body {
-  background-color: var(--branco);
+  background-color: var(--preto);
   padding-bottom: 6rem;
-/* ********************************************************** */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  /* ******************************************************** */
+}
+section {
+  padding: 5rem;
+}
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--verde);
+  margin-bottom: 3rem;
+}
+.heading span {
+
+  color: var(--cinza);
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: var(--cinza);
+  padding: .7rem;
+  font-size: 1.7rem;
+  color: var(--branco);
+  padding-left: 2rem;
+}
+.btn i {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 1.7rem;
+  text-align: center;
+  background: var(--branco);
+  color: var(--cinza);
+  border-radius: 50%;
+  margin-left: 1rem;
+  transition: .2s linear;
 }
 .navbar {
   position: fixed;
@@ -62,73 +90,98 @@ body {
 .navbar a:hover i {
   color: var(--branco);
 }
-/* *************************** Juliana ******************************** */
-
-.card{
-  width: 150px;
-  height: 150px;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-}
-.card_front, .card_back{
-  width: 100%;
-  height: 100%;
-  position: absolute;
+/* ********************************** Contato ********************************* */
+.contato .row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px var(--verde);
-  backface-visibility: hidden;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
-
-.flip{
-  transform: rotateY(180deg);
+.contato .row .info-container {
+  width: 300px;
 }
-.card_front{
-  transform: rotateY(180deg);
-  background-color: var(--cinza);
-}
-.card_back{
-  font-weight: bold;
+.contato .row .info-container h1 {
+  font-size: 16px;
   color: var(--branco);
-  background-color: var(--cinza);
-  font-size: 30px;
-  display: flex;
 }
-#gameOver{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: var(--azul);
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  top: 0;
-}
-#restart{
-  padding: 10px 60px;
+.contato .row .info-container a {
   font-size: 20px;
-  background-color: var(--verde);
-  border: none;
-  border-radius: 20px;
-  margin-top: 20px;
+  line-height: 2;
+  color: var(--branco);
 }
-#gameBoard{
-  max-width: 700px;
-  display: grid;
-  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
-  gap: 10px;
+.contato .row .info-container .box-container {
+  padding: 2rem 0;
 }
-
+.contato .row .info-container .box-container .box {
+  display: -webkit-box;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.contato .row .info-container .box-container .box i {
+  font-size: 30px;
+  color: var(--cinza);
+}
+.contato .row .info-container .box-container .box h3 {
+  font-size: 18px;
+  color: var(--branco);
+}
+.contato .row .info-container .share a {
+  font-size: 2rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  background: var(--cinza);
+  color: var(--verde);
+  text-align: center;
+  margin-right: .3rem;
+}
+.contato .row .info-container .share a:hover {
+  background: var(--branco);
+  color:var(--preto);
+}
+.contato .row form {
+  flex: 1 1 42rem;
+}
+.contato .row form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contato .row form .inputBox input {
+  width: 49%;
+}
+.contato .row form .inputBox input, .contact .row form textarea {
+  border-radius: 10px;
+  padding: 5px 20px;
+  font-size: 16px;
+  color: var(--branco);
+  text-transform: none;
+  margin-bottom: 20px;
+  background: var(--cinza);
+}
+.contato .row form textarea {
+  width: 100%;
+  border-radius: 10px;
+  resize: none;
+  height: 230px;
+}
+.contato .row form .btn {
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.contato .row form .btn:hover {
+  background: var(--preto);
+  color:var(--verde) ;
+}
 /* ************************************ Telas ********************************* */
 @media (max-width: 1200px) {
   html {
     font-size: 50%;
+  }
+  section {
+    padding: 3rem 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -139,14 +192,18 @@ body {
     padding: 0;
   }
   .navbar a span {
-    display: none;
+    display: none; 
   }
   .navbar a:hover {
     padding-bottom: 2rem;
   }
+  .contato .row form .inputBox input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 450px) {
-  html{
+  html {
     font-size: 50%;
   }
 }
