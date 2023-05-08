@@ -8,6 +8,7 @@
   text-decoration: none;
   outline: none;
   border: none;
+  font-family: 'Open Sans', sans-serif;
 }
 :root{
 --verde: green;
@@ -22,14 +23,11 @@ html {
   padding-top: 15px;
 }
 body {
-  background-color: var(--preto);
-  padding-bottom: 6rem;
-/* ********************************************************** */
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  /* ******************************************************** */
+  height: 500px;
 }
 .navbar {
   position: fixed;
@@ -62,70 +60,65 @@ body {
 .navbar a:hover i {
   color: var(--branco);
 }
-/* *************************** Jogo da Memória ******************************** */
+/* *************************** Previsão do Tempo ******************************** */
 
-.card{
-  width: 150px;
-  height: 150px;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
+.caixa-maior {
+  background-color: #000000;/*  Troca cor de fundo  */
+  width: 95%; /*  Largura  */
+  max-width: 420px; /*  Largura  Maxima */
+  opacity: 0.8;/* transparencia do item */
+  padding: 20px;
+  border-radius: 25px;
 }
-.card_front, .card_back{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px var(--verde);
-  backface-visibility: hidden;
-}
-
-.flip{
-  transform: rotateY(180deg);
-}
-.card_front{
-  transform: rotateY(180deg);
-  background-color: var(--cinza);
-}
-.card_back{
-  font-weight: bold;
-  color: var(--branco);
-  background-color: var(--cinza);
-  font-size: 30px;
-  display: flex;
-}
-#gameOver{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: var(--azul);
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  top: 0;
-}
-#restart{
-  padding: 10px 60px;
+input {
+  border: none;/* borda do elemento */
+  outline: none;/* borda quando seleciona o elemento */
+  padding: 10px;/* espaçamento interno */
+  border-radius: 24px;/* arredonda as bordas */
   font-size: 20px;
-  background-color: var(--verde);
-  border: none;
-  border-radius: 20px;
-  margin-top: 20px;
+  background-color: #7c7c7c2b;
+  color: #ffffff;
+  width: calc( 100% - 100px);
 }
-#gameBoard{
-  max-width: 700px;
-  display: grid;
-  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
-  gap: 10px;
+button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #7c7c7c2b;
+  float: right;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #7c7c7c6b;
+}
+.caixa-media {
+  margin-top: 30px;
+}
+.caixa-menor {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+h2 {
+  color: white;
+  font-size: 28px; /* tamanho do texto */
+}
+.temp {
+  color: #ffffff;
+  margin-top: 30px;
+}
+.descricao {
+  color: #ffffff;
+  margin-left: 20px;
+  text-transform: capitalize; /* Deixa a primeira letra maiuscula*/
+}
+.umidade {
+  color: #ffffff;
+  margin-top: 30px;
 }
 
-/* ************************************ Telas ********************************* */
+/* ************************************ Telas *********************************** */
 @media (max-width: 1200px) {
   html {
     font-size: 50%;

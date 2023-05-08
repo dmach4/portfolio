@@ -10,6 +10,7 @@
     <link rel="icon" href="laptop.png" />
   </head>
   <body>
+
     <nav class="navbar">
       <a href="index.html"><i class="fas fa-home"></i><span>Inicio</span></a>
       <a href="sobre.html"><i class="fas fa-user"></i><span>Sobre</span></a>
@@ -17,14 +18,20 @@
       <a href="contato.html"><i class="fas fa-address-book"></i><span>Contato</span></a>
     </nav>
 
+    <div class="caixa-maior">
+      <input class="input-cidade" placeholder="Digite o nome da sua Cidade"/>
+      <button onclick="CLIQUENOBOTAO">BUSCAR</button>
+      <div class="caixa-media">
+        <h2 class="cidade">O tempo da Cidade</h2>
+        <p class="temp">°C</p>
+        <div class="caixa-menor">
+          <img src=" https://openweathermap.org/img/wn/04n.png />
+          <p class="descricao">Nuvens</p>
+        </div>
+        <p class="umidade">00% Umidade do Ar.</p>
+      </div>
+    </div>
 
-
-
-
-
-
-
-
-    <script src="prev-tempo.js"></script>
+    <script src="pre-tempo.js"></script>
   </body>
 </html>
