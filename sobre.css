@@ -119,13 +119,13 @@ section {
 .sobre .row .info-container .box-container .box {
   flex: 1 1 20rem;
 }
-.sobre .row .info-container .box-container .box h3 {
+.sobre .row .info-container .box-container .box h4 {
   font-size: 18px;
   color: var(--branco);
   padding: 1rem 0;
   font-weight: normal;
 }
-.sobre .row .info-container .box-container .box h3 span {
+.sobre .row .info-container .box-container .box h4 span {
   color: var(--branco);
   font-weight: lighter;
 }
@@ -143,7 +143,7 @@ section {
   background: var(--cinza);
   box-shadow: 4px 2px var(--verde);
 }
-.sobre .row .count-container .box h3 {
+.sobre .row .count-container .box h4 {
   font-size: 30px;
   color: var(--verde);
 }
@@ -166,14 +166,14 @@ section {
 .conhecimento .box-container .box:hover {
   background: var(--branco);
 }
-.conhecimento .box-container .box:hover h3 {
+.conhecimento .box-container .box:hover h4 {
   color: var(--preto);
 }
 .conhecimento .box-container .box img {
   height: 70px;
   margin-bottom: 5px;
 }
-.conhecimento .box-container .box h3 {
+.conhecimento .box-container .box h4 {
   color: var(--branco);
   font-size: 16px;
 }
@@ -211,7 +211,7 @@ section {
   padding: 5px 20px;
   background: var(--cinza);
 }
-.estudo .box-container .box h3 {
+.estudo .box-container .box h4 {
   font-size: 20px;
   padding: 10px 0px;
   color: var(--branco);
