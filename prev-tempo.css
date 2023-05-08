@@ -21,6 +21,7 @@ html {
   font-size: 60%;
   overflow-x: hidden;
   padding-top: 15px;
+  height: 100vh;
 }
 body {
   background-image: url("https://source.unsplash.com/1600x900/?landscape");
@@ -29,8 +30,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height:768px; 
-  /* erro na altura */
+  height:100%; 
+
 }
 .navbar {
   position: fixed;
