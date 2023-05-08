@@ -24,6 +24,7 @@ html {
 }
 body {
   background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-size:cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,34 +64,32 @@ body {
 /* *************************** Previsão do Tempo ******************************** */
 
 .caixa-maior {
-  background-color: #000000;/*  Troca cor de fundo  */
-  width: 95%; /*  Largura  */
-  max-width: 420px; /*  Largura  Maxima */
-  opacity: 0.8;/* transparencia do item */
-  padding: 20px;
-  border-radius: 25px;
+  background-color: var(--cinza);
+  width: 95%;
+  max-width: 450px;
+  opacity: 0.7;
+  padding: 25px;
+  border-radius: 20px;
 }
-input {
-  border: none;/* borda do elemento */
-  outline: none;/* borda quando seleciona o elemento */
-  padding: 10px;/* espaçamento interno */
-  border-radius: 24px;/* arredonda as bordas */
+input { 
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 24px;
   font-size: 20px;
-  background-color: #7c7c7c2b;
-  color: #ffffff;
   width: calc( 100% - 100px);
 }
 button {
   border: none;
   outline: none;
-  padding: 10px;
-  border-radius: 50px;
-  background-color: #7c7c7c2b;
+  padding: 14px;
+  border-radius: 24px;
   float: right;
   cursor: pointer;
 }
 button:hover {
-  background-color: #7c7c7c6b;
+  background-color: var(--preto);
+  color: var(--branco);
 }
 .caixa-media {
   margin-top: 30px;
@@ -106,20 +105,23 @@ button:hover {
 }
 
 h2 {
-  color: white;
-  font-size: 28px; /* tamanho do texto */
+  color:var(--branco);
+  font-size: 28px;
 }
 .temp {
-  color: #ffffff;
+  color:var(--branco);
+  font-size: 28px;
   margin-top: 30px;
 }
 .descricao {
-  color: #ffffff;
+  color:var(--branco);
   margin-left: 20px;
-  text-transform: capitalize; /* Deixa a primeira letra maiuscula*/
+  font-size: 28px;
+  text-transform: capitalize;
 }
 .umidade {
-  color: #ffffff;
+  color: var(--branco);
+  font-size: 28px;
   margin-top: 30px;
 }
 
