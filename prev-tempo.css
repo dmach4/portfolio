@@ -29,7 +29,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height:850px;
+  height:768px; 
+  /* erro na altura */
 }
 .navbar {
   position: fixed;
