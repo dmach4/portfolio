@@ -22,8 +22,10 @@ html {
 }
 body {
   background-image: url(fundo.png);
-  padding-bottom: 6rem;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
+
 section {
   padding: 5rem;
 }
@@ -186,6 +188,7 @@ section {
 @media (max-width: 1200px) {
   html {
     font-size: 50%;
+    height: 100%;
   }
   section {
     padding: 3rem 2rem;
