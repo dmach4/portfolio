@@ -21,7 +21,8 @@ html {
   overflow-x: hidden;
 }
 body {
-  background-color:rgb(55, 55, 168);
+  background-image: url(julianaF.jpg);
+  /* background-color:rgb(55, 55, 168); */
   padding-bottom: 6rem;
 }
 section {
