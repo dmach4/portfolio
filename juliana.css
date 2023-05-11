@@ -9,7 +9,6 @@
 --branco: #bfaaa2;
 --preto:black;
 }
-
 html {
 background-color: var(--azul);
 }
@@ -29,10 +28,70 @@ header{
 }
 header .btn button{
   margin: 20px;
-  padding: 10px 30px;
+  padding: 10px 50px;
   border:1px solid var(--branco);
-  border-radius: 25px;
+  border-radius: 30px;
 }
+header .btn :hover{
+  color: var(--branco);
+  font-size: 15px;
+  cursor: pointer;
+  background-color: var(--azul);
+  border: none;
+}
+
+
+
+
+
+
+/* ************************************ Telas ********************************* */
+@media (max-width: 1200px) {
+  html {
+    height: 100%;
+  }
+}
+@media (max-width: 820px){
+  html {
+    font-size: 50%;
+  }
+  header{
+    display: flex;
+    justify-content:center;
+  }
+  .btn button{
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .btn button{
+    display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ******************************Animação da ecrita **********************************/
 .escrita{
   display: block; 
@@ -48,7 +107,7 @@ header .btn button{
   line-height: 20px;
   height: 100%;
   overflow: hidden;
-  color: white;
+  color: var(--branco);
 }
 @keyframes slide{
   100%{
@@ -71,38 +130,5 @@ header .btn button{
   100%{
     left: 100%;
     margin: 0 -20px 0 20px;
-  }
-}
-
-/* ************************************ Telas ********************************* */
-@media (max-width: 1200px) {
-  html {
-    font-size: 50%;
-    height: 100%;
-  }
-}
-@media (max-width: 820px) {    /* 768 */
-  html {
-    font-size: 50%;
-  }
-  header{
-    display: flex;
-    justify-content:center;
-  }
-  .btn button{
-    display: none;
-  }
-  
-}
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-  header{
-    display: flex;
-    justify-content:center;
-  }
-  .btn button{
-    display: none;
   }
 }
