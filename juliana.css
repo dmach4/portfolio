@@ -1,197 +1,45 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
 *{
-  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  border: none;
+  box-sizing: border-box; 
 }
 :root{
 --verde: green;
---azul: rgb(13, 13, 135);
+--azul: #284473;
 --branco: white;
 --cinza: #1a1a1a;
 --preto:black;
+
+.TP{
+  border: 1px solid var(--preto);
 }
+}
+
 html {
-  font-size: 62%;
-  overflow-x: hidden;
-}
-body {
-  background-image: url(fundo.png);
-  background-repeat: no-repeat;
-  background-size:cover;
+background-color: var(--azul);
 }
 
-section {
-  padding: 5rem;
-}
-.heading {
-  text-align: center;
-  font-size: 3rem;
-  color: var(--preto);
-  margin-bottom: 3rem;
-}
-.heading span {
-
-  color: var(--cinza);
-}
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  border-radius: 5rem;
-  background: var(--cinza);
-  padding: .7rem;
-  font-size: 1.7rem;
-  color: var(--branco);
-  padding-left: 2rem;
-}
-.btn i {
-  height: 4rem;
-  width: 4rem;
-  line-height: 4rem;
-  font-size: 1.7rem;
-  text-align: center;
-  background: var(--branco);
-  color: var(--cinza);
-  border-radius: 50%;
-  margin-left: 1rem;
-  transition: .2s linear;
-}
-.navbar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  z-index: 100;
-  align-items: flex-end;
-}
-.navbar a {
-  padding: 2rem;
-  font-size: 2rem;
-  background: var(--cinza);
-  flex: 1;
-  color: var(--branco);
-  text-align: center;
-  transition: .2s linear;
-}
-.navbar a i {
-  color: var(--verde);
-  padding-right: .5rem;
-}
-.navbar a:hover {
-  background: var(--cinza);
-  padding-bottom: 6rem;
-  border-radius: 40px 40px 0px 0px;
-  color: var(--verde);
-}
-.navbar a:hover i {
-  color: var(--branco);
-}
-/* ********************************** Contato ********************************* */
-
-.logo{
+header{
   display: flex;
   align-items: center;
-}
+  justify-content: center  ;
 
-.contato .row {
-  display: flex;
-  align-items:center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.contato .row .info-container {
-  width: 300px;
-}
-.contato .row .info-container h1 {
-  font-size: 16px;
-  color: var(--branco);
-}
-.contato .row .info-container a {
-  font-size: 20px;
-  line-height: 2;
-  color: var(--branco);
-}
-.contato .row .info-container .box-container {
-  padding: 2rem 0;
-}
-.contato .row .info-container .box-container .box {
-  display: -webkit-box;
-  display: flex;
-  gap: 2rem;
-  padding: 1rem 0;
 
-}
-.contato .row .info-container .box-container .box i {
-  font-size: 30px;
-  color: var(--cinza);
-}
-.contato .row .info-container .box-container .box h3 {
-  font-size: 18px;
-  color: var(--branco);
-}
-.contato .row .info-container .share a {
-  font-size: 2rem;
-  height: 4.5rem;
-  width: 4.5rem;
-  line-height: 4.5rem;
-  border-radius: 50%;
-  background: var(--cinza);
-  color: var(--branco);
-  text-align: center;
-  margin-right: .3rem;
-}
-.contato .row .info-container .share a:hover {
-  background: var(--branco);
-  color:var(--preto);
-}
-.contato .row form {
-  flex: 1 1 42rem;
-}
-.contato .row form .inputBox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.contato .row form .inputBox input {
-  width: 60%;
-}
-.contato .row form .inputBox input, .contact .row form textarea {
-  border-radius: 10px;
-  padding: 5px 20px;
-  font-size: 16px;
-  color: var(--branco);
-  text-transform: none;
-  margin-bottom: 20px;
-  background: var(--cinza);
-}
-.contato .row form textarea {
-  width: 100%;
-  border-radius: 10px;
-  resize: none;
-  height: 230px;
-}
-.contato .row form .btn {
-  padding: 10px 30px;
-  cursor: pointer;
-}
-.contato .row form .btn:hover {
-  background: var(--preto);
-  color:var(--verde) ;
-}
+
+
+
+
+
+
+
+
+
+
 /* ************************************ Telas ********************************* */
 @media (max-width: 1200px) {
   html {
     font-size: 50%;
     height: 100%;
-  }
-  section {
-    padding: 3rem 2rem;
   }
 }
 @media (max-width: 768px) {
