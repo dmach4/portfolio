@@ -9,9 +9,7 @@
 --branco: #bfaaa2;
 --preto:black;
 }
-.TP{
-  border: 1px solid var(--preto);
-}
+
 html {
 background-color: var(--azul);
 }
@@ -21,9 +19,14 @@ body{
   height: 100%;
 }
 header{
+  margin-top: 10px;
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content:left;
+  border: 1px solid var(--preto);
+}
+.btn{
+  
 }
 
 /* ********************************** Escrita **********************************/
@@ -66,16 +69,6 @@ header{
     margin: 0 -20px 0 20px;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 /* ************************************ Telas ********************************* */
 @media (max-width: 1200px) {
