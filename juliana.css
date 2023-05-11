@@ -81,7 +81,17 @@ header .btn button{
     height: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 820px) {    /* 768 */
+  html {
+    font-size: 50%;
+  }
+  header{
+    display: flex;
+    justify-content:center;
+  }
+  .btn button{
+    display: none;
+  }
   
 }
 @media (max-width: 450px) {
