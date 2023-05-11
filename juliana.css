@@ -27,27 +27,28 @@ header{
   display: flex;
   align-items: center;
 }
-.btn button{
+header .btn button{
   margin: 20px;
-  padding: 10px;
-  border-radius: 20px 20px 0px 20px;
+  padding: 10px 30px;
+  border:1px solid var(--branco);
+  border-radius: 25px;
 }
-/* ********************************** Escrita **********************************/
-.paragrafo{
+/* ******************************Animação da ecrita **********************************/
+.escrita{
   display: block; 
   text-align: center;
 }
-.paragrafo .estatico{
+.escrita .estatico{
   color: var(--azulClaro);
   font-size: 50px;
 }
-.paragrafo .dinamico{
-  font-size: 20px;
+.escrita .dinamico{
+  font-size: 17px;
   margin-left: 10px;
   line-height: 20px;
   height: 100%;
   overflow: hidden;
-  color: var(--branco);
+  color: white;
 }
 @keyframes slide{
   100%{
@@ -81,22 +82,7 @@ header{
   }
 }
 @media (max-width: 768px) {
-  .heading {
-    font-size: 3rem;
-  }
-  .navbar a i {
-    padding: 0;
-  }
-  .navbar a span {
-    display: none; 
-  }
-  .navbar a:hover {
-    padding-bottom: 2rem;
-  }
-  .contato .row form .inputBox input {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+  
 }
 @media (max-width: 450px) {
   html {
