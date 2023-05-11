@@ -4,26 +4,68 @@
   box-sizing: border-box; 
 }
 :root{
---verde: green;
 --azul: #284473;
---branco: white;
---cinza: #1a1a1a;
+--azulClaro: #7c9aab;
+--branco: #bfaaa2;
 --preto:black;
-
+}
 .TP{
   border: 1px solid var(--preto);
 }
-}
-
 html {
 background-color: var(--azul);
 }
-
+body{
+  margin: auto;
+  width: 90%;
+  height: 100%;
+}
 header{
   display: flex;
   align-items: center;
-  justify-content: center  ;
+  justify-content:space-between;
+}
 
+/* ********************************** Escrita **********************************/
+.paragrafo{
+  display: block; 
+  text-align: center;
+}
+.paragrafo .estatico{
+  color: var(--azulClaro);
+  font-size: 50px;
+}
+.paragrafo .dinamico{
+  font-size: 20px;
+  margin-left: 10px;
+  line-height: 20px;
+  height: 100%;
+  overflow: hidden;
+  color: var(--branco);
+}
+@keyframes slide{
+  100%{
+    top: -360px;
+  }
+}
+.dinamico li span::after{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  animation: typing 2s steps(30) infinite;
+  background: var(--azul);
+}
+.dinamico li span{
+  position: relative;
+}
+@keyframes typing{
+  100%{
+    left: 100%;
+    margin: 0 -20px 0 20px;
+  }
+}
 
 
 
