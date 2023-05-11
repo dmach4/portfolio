@@ -19,7 +19,6 @@ body{
   height: 100%;
 }
 header{
-  border: 1px solid black;
   margin-top: 10px;
   display: flex;
   justify-content:space-between;
@@ -102,5 +101,12 @@ header{
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  header{
+    display: flex;
+    justify-content:center;
+  }
+  .btn button{
+    display: none;
   }
 }
