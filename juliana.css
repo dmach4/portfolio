@@ -20,20 +20,22 @@ body{
 header{
   margin-top: 10px;
   display: flex;
-  justify-content:space-between;
+  justify-content:space-around;
+  align-items: center;
 }
 .logo{
   display: flex;
-  align-items: center;
 }
 header .btn button{
-  margin: 20px;
+  background-color: var(--azulClaro);
+  color: var(--branco);
+  margin-left: 40px;
   padding: 10px 50px;
-  border:1px solid var(--branco);
   border-radius: 30px;
+  border: 1px solid var(--azulClaro);
 }
 header .btn :hover{
-  color: var(--branco);
+  color: var(--azulClaro);
   font-size: 15px;
   cursor: pointer;
   background-color: var(--azul);
