@@ -3,7 +3,7 @@ function abrirMenu(){
     if (Item.style.display == "block")
     {
         Item.style.display ="none";
-        navigator.vibrate(1000);
+        navigator.vibrate(100);
     }
     else
     {
