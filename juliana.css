@@ -52,6 +52,13 @@ header .btn :hover{
   html {
     height: 100%;
   }
+  header{
+    display: flex;
+    justify-content:center;
+  }
+  .btn button{
+    display: none;
+  }
 }
 @media (max-width: 820px){
   html {
@@ -66,6 +73,10 @@ header .btn :hover{
   }
 }
 @media (max-width: 450px) {
+  header{
+    display: flex;
+    justify-content:center;
+  }
   .btn button{
     display: none;
   }
