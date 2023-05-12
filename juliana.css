@@ -67,7 +67,7 @@ header .btn :hover{
 }
 @media (max-width: 450px) {
   .btn button{
-    display: flex;
+    display: none;
   }
 }
 
