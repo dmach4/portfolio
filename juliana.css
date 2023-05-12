@@ -17,6 +17,8 @@ body{
   width: 90%;
   height: 100%;
 }
+
+
 header{
   position: relative;
   background-color: var(--azul);
@@ -28,8 +30,8 @@ header{
 
 header .menuIcon button{
 position:absolute;
-bottom: 5%;
-right: 2%;
+bottom: 6%;
+right: 3%;
 border: none;
 display: none;
 }
@@ -37,7 +39,7 @@ header .menuIcon button{
   background-color: var(--azul);
 }
 header .menuIcon button .figura{
-  width: 25px;
+  width: 30px;
 }
 
 
