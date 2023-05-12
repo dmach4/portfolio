@@ -115,6 +115,9 @@ nav .cel button{
   nav .cel button{
     display: block;
   }
+  header .menuIcon button, .figura{
+    display: block; 
+  }
 }
 @media (max-width: 450px) {
   header{
