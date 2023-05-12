@@ -1,8 +1,11 @@
 function abrirMenu(){
-    if(Item.style.display == 'block'){
-        item.style.display='none'
+
+    if (Item.style.display == "block")
+    {
+        Item.style.display ="none";
     }
-    else{
-        Item.style.display='block'
+    else
+    {
+        Item.style.display ="block";
     }
 }
