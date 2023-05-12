@@ -27,8 +27,10 @@ header{
   display: flex;
 }
 header .btn button{
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  color: var(--azul);
   background-color: var(--azulClaro);
-  color: var(--branco);
   margin-left: 40px;
   padding: 10px 50px;
   border-radius: 30px;
@@ -36,10 +38,8 @@ header .btn button{
 }
 header .btn :hover{
   color: var(--azulClaro);
-  font-size: 15px;
   cursor: pointer;
   background-color: var(--azul);
-  border: none;
 }
 
 
