@@ -22,11 +22,10 @@ header{
   margin-top: 10px;
   display: flex;
   justify-content:space-around;
-  align-items: center;  
+  align-items: center;
 }
 
-
-
+ 
 
 header .menuIcon button{
 display: none;
@@ -37,10 +36,10 @@ left: 35px;
 header .menuIcon button{
   background-color: var(--azul);
 }
-
 header .menuIcon button .figura{
   width: 20px;
 }
+
 
 
 
@@ -64,7 +63,7 @@ header .btn :hover{
   background-color: var(--azul);
 }
 nav{
-  display: flex;
+  display: none;
   justify-content: center;
   width: 100%;
 }
@@ -86,7 +85,6 @@ nav .cel button{
   border-radius: 20px;
   border: none;
 }
-
 /* ************************************ Telas ********************************* */
 @media (max-width: 1200px) {
   html {
@@ -132,30 +130,7 @@ nav .cel button{
   header .menuIcon button, .figura{
     display: block; 
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} 
 
 /* ******************************Animação da ecrita **********************************/
 .escrita{
