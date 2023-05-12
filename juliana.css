@@ -28,16 +28,16 @@ header{
 }
 header .btn button{
   font-family: 'Lora', serif;
-  font-size: 20px;
+  font-size: 25px;
   color: var(--azul);
   background-color: var(--azulClaro);
   margin-left: 40px;
-  padding: 10px 50px;
+  padding: 1px 50px;
   border-radius: 30px;
   border: 1px solid var(--azulClaro);
 }
 header .btn :hover{
-  color: var(--azulClaro);
+  color: white;
   cursor: pointer;
   background-color: var(--azul);
 }
@@ -48,7 +48,7 @@ header .btn :hover{
 
 
 /* ************************************ Telas ********************************* */
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   html {
     height: 100%;
   }
