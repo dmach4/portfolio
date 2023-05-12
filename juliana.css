@@ -18,6 +18,7 @@ body{
   height: 100%;
 }
 header{
+  position: relative;
   background-color: var(--azul);
   margin-top: 10px;
   display: flex;
@@ -25,22 +26,19 @@ header{
   align-items: center;
 }
 
- 
-
 header .menuIcon button{
+position:absolute;
+bottom: 5%;
+right: 2%;
+border: none;
 display: none;
-position:relative;
-bottom: 20px;
-left: 35px;
 }
 header .menuIcon button{
   background-color: var(--azul);
 }
 header .menuIcon button .figura{
-  width: 20px;
+  width: 25px;
 }
-
-
 
 
 
