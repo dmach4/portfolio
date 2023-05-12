@@ -10,7 +10,8 @@
 --preto:black;
 }
 html {
-background-color: var(--azul);
+/* background-image: linear-gradient(to hight, white, blue); */
+background: linear-gradient(to right, white, blue);
 }
 body{
   margin: auto;
@@ -18,6 +19,7 @@ body{
   height: 100%;
 }
 header{
+  background-color: var(--azul);
   margin-top: 10px;
   display: flex;
   justify-content:space-around;
