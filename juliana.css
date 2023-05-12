@@ -10,7 +10,6 @@
 --preto:black;
 }
 html {
-/* background-image: linear-gradient(to hight, white, blue); */
 background: linear-gradient(to right, white, blue);
 }
 body{
@@ -43,6 +42,21 @@ header .btn :hover{
   cursor: pointer;
   background-color: var(--azul);
 }
+nav{
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  width: 100%;
+}
+
+nav .celular button{
+  display: none;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  color: var(--azul);
+  background-color: var(--azulClaro);
+  width: 100%;
+}
 
 
 
@@ -53,6 +67,9 @@ header .btn :hover{
 @media (max-width: 1250px) {
   html {
     height: 100%;
+  }
+  nav .celular button{
+    display: none;
   }
   header{
     display: flex;
@@ -73,6 +90,10 @@ header .btn :hover{
   .btn button{
     display: none;
   }
+  nav .celular button{
+    display: none;
+  }
+
 }
 @media (max-width: 450px) {
   header{
@@ -81,6 +102,9 @@ header .btn :hover{
   }
   .btn button{
     display: none;
+  }
+  nav .celular button{
+    display: block;
   }
 }
 
