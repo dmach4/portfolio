@@ -79,13 +79,9 @@ nav .cel button{
   border-radius: 20px;
   border: none;
 }
-
-
 section img{
   width: 100%;
 }
-
-
 /* ************************************ Telas ********************************* */
 @media (max-width: 1200px) {
   html {
@@ -134,8 +130,7 @@ section img{
   header .menuIcon button, .figura{
     display: block; 
   }
-} 
-
+}
 /* ******************************Animação da ecrita **********************************/
 .escrita{
   display: block; 
